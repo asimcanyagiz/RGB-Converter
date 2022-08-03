@@ -41,15 +41,49 @@ class ViewController: UIViewController {
         lblSelectedColor.backgroundColor = UIColor.systemGray3
         segmentedText.setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
         
-        if secilenIndex == 0 {
-            btnConvert.setTitle("HEX convert", for: UIControl.State.normal)
-        } else {
-            btnConvert.setTitle("RGB convert", for: UIControl.State.normal)
-        }
+//        if secilenIndex == 0 {
+//            btnConvert.setTitle("HEX convert", for: UIControl.State.normal)
+//        } else {
+//            btnConvert.setTitle("RGB convert", for: UIControl.State.normal)
+//        }
         
     }
     
     @IBAction func btnConvertClicked(_ sender: UIButton) {
+        
+        
+        if secilenIndex == 0 {
+            //RGB TO HEX
+            convertToHex()
+            
+        } else {
+            //HEX TO RGB
+            convertToRgb()
+        }
+    }
+    
+    func convertToHex() {
+        if let redValue = UInt8(redText.text!){
+            
+            if let greenValue = UInt8(greenText.text!) {
+                
+                if let blueValue = UInt8(blueText.text!){
+                    //User's values are correct
+                    
+                    let redHex = String(format: "%2X", redValue)
+                    let greenHex = String(format: "%2X", greenValue)
+                    let blueHex = String(format: "%2X", blueValue)
+                    
+                    lblResult.text = "#\(redHex)\(greenHex)\(blueHex)"
+                    lblSelectedColor.backgroundColor = UIColor(red: CGFloat(redValue)/255, green: CGFloat(greenValue)/255, blue: CGFloat(blueValue)/255, alpha: 1)
+                }
+            }
+        }
+        
+    }
+    
+    func convertToRgb() {
+        
     }
     
     
