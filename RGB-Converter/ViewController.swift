@@ -72,16 +72,16 @@ class ViewController: UIViewController {
         lblSelectedColor.backgroundColor = UIColor(red: CGFloat(redValue)/255, green: CGFloat(greenValue)/255, blue: CGFloat(blueValue)/255, alpha: 1)
         
 //        if let redValue = UInt8(redText.text!){
-//            
+//
 //            if let greenValue = UInt8(greenText.text!) {
-//                
+//
 //                if let blueValue = UInt8(blueText.text!){
 //                    //User's values are correct
-//                    
+//
 //                    let redHex = String(format: "%2X", redValue)
 //                    let greenHex = String(format: "%2X", greenValue)
 //                    let blueHex = String(format: "%2X", blueValue)
-//                    
+//
 //                    lblResult.text = "#\(redHex)\(greenHex)\(blueHex)"
 //                    lblSelectedColor.backgroundColor = UIColor(red: CGFloat(redValue)/255, green: CGFloat(greenValue)/255, blue: CGFloat(blueValue)/255, alpha: 1)
 //                }
