@@ -83,6 +83,18 @@ class ViewController: UIViewController {
     }
     
     func convertToRgb() {
+        if let redValue = UInt8(redText.text!, radix: 16) {
+            
+            if let greenValue = UInt8(greenText.text!, radix: 16){
+                
+                if let blueValue = UInt8(redText.text!, radix: 16){
+                    
+                    
+                    lblResult.text = "RGB (\(redValue), \(greenValue), \(blueValue))"
+                    lblSelectedColor.backgroundColor = UIColor(red: CGFloat(redValue)/255, green: CGFloat(greenValue)/255, blue: CGFloat(blueValue)/255, alpha: 1)
+                }
+            }
+        }
         
     }
     
