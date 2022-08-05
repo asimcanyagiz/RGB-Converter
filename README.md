@@ -22,7 +22,6 @@
 
 * You can change your Rgb code to Hex code
 * You can see the color of the Rgb code inside the frame!
-* Real time warning notifications
   - ![rgb-converterr](https://user-images.githubusercontent.com/89473605/183098752-89975f49-fbcd-482c-9362-6b76d44e68ab.gif)
 * You can change your Hex code to Rgb code
 * You can see the color of the Hex code inside the frame!
